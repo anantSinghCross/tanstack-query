@@ -39,7 +39,7 @@ function App() {
         <h1 className="text-lg font-semibold border-2 border-indigo-400 text-slate-600 rounded-3xl bg-white p-5">
           Showing {count} posts ...
         </h1>
-        <button className="hover:bg-slate-100 py-2 text-sm font-semibold px-3 w-full rounded-full transition-all"
+        <button className="hover:shadow-xl shadow py-2 my-2 text-white text-sm font-semibold px-3 w-full rounded-full transition-all duration-300 bg-indigo-500"
         onClick={() => mutate()}>
           {
             isMutateLoading ? 'Saving post...' : 'Add post'
@@ -51,7 +51,7 @@ function App() {
             return (
               <div
                 key={item.id}
-                className="flex flex-col gap-5 p-5 my-4 rounded-3xl bg-white shadow-lg text-slate-500"
+                className="flex flex-col gap-5 p-5 my-4 rounded-3xl bg-white shadow-lg shadow-slate-300/50 text-slate-500"
               >
                 <h3 className="font-semibold text-slate-600">{item.title}</h3>
                 <p className="">{item.body}</p>
